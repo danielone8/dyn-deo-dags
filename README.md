@@ -18,7 +18,7 @@ DEO_sampler= deo_structure_mcmc(...)
 The arguments of the function are:
 
 ```
-n_variables_p: number of nodes of the Network
+n_variables_p: number of nodes of the network
 max_parents_p: number of maximum parents per node
 n_iter: number of iterations after the first tuning phase
 cache: cache containing the local scores of the nodes
