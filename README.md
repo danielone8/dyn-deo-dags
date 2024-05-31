@@ -1,7 +1,7 @@
 # DEO Structure MCMC for sampling DAGs
  This repository contains a jupyter notebook that contains functions for sampling DAGs using a costumizable structure MCMC that can use different types of parallel tempering algorithms.
 
- ### Types of move
+ ### Type of move
 The structure MCMC can use 3 different types of moves:
 * MC3 move (adding, removing, reversing an edge)
 * REV move (New Edge Reversal)
@@ -10,7 +10,7 @@ The structure MCMC can use 3 different types of moves:
 ### Different samplers
 There are 4 different samplers in the notebook (3 involving different parallel tempering schemes and 1 simple structure MCMC without parallel tempering). The most efficient sampler is the DEO structure MCMC.  
 
-### DEO structure MCMC function
+### DEO structure MCMC function (example in the notebook)
 Tu run a structure MCMC using DEO (Deterministic Even Odd scheme) parallel tempering scheme call the function:
 ```
 DEO_sampler=deo_structure_mcmc(...) 
@@ -51,3 +51,11 @@ To run a simple structure MCMC without parallel tempering use the function:
 no_pt_sampler=structure_mcmc(...) 
 ```
 
+### Useful tips
+The function
+```
+cache= cache_f (path,max_parents,n_nodes) 
+```
+uses a .jkl file as input (containng BDeu or BGe local scores). Those files can be easily generated using [GOBNILP] (https://jcussens.github.io/#Software)<br> starting from discrete datasets. Some datasets are available in the data folder.
+
+Some diagnostic functions are added at the end of the notebook (function to compute the score of a DAG, to compute the posterior probability of all the edges for a MCMC run, etc.) 
