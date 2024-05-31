@@ -56,6 +56,6 @@ The function
 ```
 cache= cache_f (path,max_parents,n_nodes) 
 ```
-uses a .jkl file as input (containing BDeu or BGe local scores). Those files can be easily generated using for discrete datasets using [GOBNILP](https://jcussens.github.io/#Software). A list of datasets (some of them are artificially generated from reference networks) and their respective .jkl files can be found in the "data" folder.
+uses a .jkl file as input (containing BDeu or BGe local scores). Those files can be easily generated, for discrete datasets, using [GOBNILP](https://jcussens.github.io/#Software). A list of datasets (some of them are artificially generated from reference networks) and their respective .jkl files can be found in the "data" folder.
 
 Diagnostic functions are added at the end of the notebook (function to compute the score of a DAG, to compute the posterior probability of all the edges for a MCMC run, etc.). 
