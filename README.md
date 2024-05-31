@@ -13,7 +13,7 @@ There are 4 different samplers in the notebook (3 involving different parallel t
 ### DEO structure MCMC function (example available in the notebook)
 Tu run a structure MCMC using DEO (Deterministic Even Odd scheme) parallel tempering scheme, call the function:
 ```
-DEO_sampler=deo_structure_mcmc(...) 
+DEO_sampler= deo_structure_mcmc(...) 
 ```
 The arguments of the function are:
 
@@ -38,17 +38,17 @@ uniform_p: if True the uniform prior is used, if False the sparse prior is used 
 ### Other samplers (less performing)
 To run the SEO (Stochastic Even Odd scheme) structure MCMC use the function:
 ```
-SEO_sampler=seo_structure_mcmc(...) 
+SEO_sampler= seo_structure_mcmc(...) 
 ```
 
 To run a structure MCMC where, in the cummunication phase, only 1 random swap among chains is allowed:
 ```
-single_swap_pt_sampler=rand_structure_mcmc(...) 
+single_swap_pt_sampler= rand_structure_mcmc(...) 
 ```
 
 To run a simple structure MCMC without parallel tempering use the function:
 ```
-no_pt_sampler=structure_mcmc(...) 
+no_pt_sampler= structure_mcmc(...) 
 ```
 
 ### Useful tips
