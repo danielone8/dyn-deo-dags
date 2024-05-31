@@ -1,7 +1,7 @@
 # DEO Structure MCMC for sampling DAGs
  This repository contains a Jupyter notebook where functions for sampling DAGs (using a costumizable structure MCMC) are implemented. The sampler can use different types of parallel tempering schemes.
 
- ### Type of moves
+ ### Types of moves
 The structure MCMC can use 3 different types of moves:
 * MC3 move (adding, removing, reversing an edge)
 * REV move (New Edge Reversal)
