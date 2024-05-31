@@ -11,7 +11,7 @@ The structure MCMC can use 3 different types of moves:
 There are 4 different samplers in the notebook (3 involving different parallel tempering schemes and 1 simple structure MCMC without parallel tempering). The most efficient sampler is the DEO structure MCMC.  
 
 ### DEO structure MCMC function (example in the notebook)
-Tu run a structure MCMC using DEO (Deterministic Even Odd scheme) parallel tempering scheme call the function:
+Tu run a structure MCMC using DEO (Deterministic Even Odd scheme) parallel tempering scheme, call the function:
 ```
 DEO_sampler=deo_structure_mcmc(...) 
 ```
@@ -28,10 +28,10 @@ prob_rev: probability of performing a REV move (recommended= 0.7)
 prob_mbr: probability of performing a MBR move (recommended= 0.2)
 seed: random seed
 dynamic: if True the second tuning phase is not stopped (recommended= True)
-geometric: if True the temperatures are not tuned and the number of chains remains n_chains_p (recommended= False)
-complete: set False to output only the DAGs, their scores, the final number of chains, the rejection ratio among chains, the temperatures
+geometric: if True the temperatures are not tuned and the number of chains remains equal to n_chains_p (recommended= False)
+complete: set False to output only the DAGs, their scores, the final number of chains, the rejection ratio among chains and the temperatures
 step_tune: the number of samples that are taken into account for the second tuning phase (to update only the temperatures)
-n_tune: number of times the sceond tuning phase is performed (if dynamic== True, n_tune= inf)
+n_tune: number of times the second tuning phase is performed (if dynamic== True, n_tune= inf)
 uniform_p: if True the uniform prior is used, if False the sparse prior is used (uniform_p= False by default)
 ```
 
