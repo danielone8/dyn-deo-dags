@@ -10,7 +10,7 @@ The structure MCMC can use 3 different types of moves:
 ### Different samplers
 There are 4 different samplers in the notebook (3 involving different parallel tempering schemes and 1 simple structure MCMC without parallel tempering). The most efficient sampler is the DEO structure MCMC.  
 
-### DEO structure MCMC function (example in the notebook)
+### DEO structure MCMC function (example available in the notebook)
 Tu run a structure MCMC using DEO (Deterministic Even Odd scheme) parallel tempering scheme, call the function:
 ```
 DEO_sampler=deo_structure_mcmc(...) 
