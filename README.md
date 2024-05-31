@@ -38,7 +38,7 @@ uniform_p: if True the uniform prior is used, if False the sparse prior is used 
 ### Other samplers (less performing)
 To run the SEO (Stochastic Even Odd scheme) structure MCMC use the function:
 ```
-SEO_sampler=deo_structure_mcmc(...) 
+SEO_sampler=seo_structure_mcmc(...) 
 ```
 
 To run a structure MCMC where, in the cummunication phase, only 1 random swap among chains is allowed:
