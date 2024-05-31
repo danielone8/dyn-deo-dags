@@ -3,17 +3,17 @@
 
  ### Types of move
 The structure MCMC can use 3 different types of moves:
-* MC3 move (add, remove, reversal of an edge)
+* MC3 move (adding, removing, reversing an edge)
 * REV move (New Edge Reversal)
 * MBR move (Markov Blanket Resampling)
 
 ### Different samplers
-There are 4 different samplers in the notebook: 
+There are 4 different samplers in the notebook (3 involving different parallel tempering schemes and 1 simple structure MCMC without parallel tempering). The most efficient sampler is the DEO structure MCMC.  
 
-### DEO structure MCMC without parallel tempering
-Tu run a structure MCMC using DEO parallel tempering scheme call the function:
+### DEO structure MCMC function
+Tu run a structure MCMC using DEO (Deterministic Even Odd scheme) parallel tempering scheme call the function:
 ```
-DAGs_sampler=deo_structure_mcmc() 
+DEO_sampler=deo_structure_mcmc(...) 
 ```
 The arguments of the function are:
 
@@ -34,3 +34,20 @@ step_tune: the number of samples that are taken into account for the second tuni
 n_tune: number of times the sceond tuning phase is performed (if dynamic== True, n_tune= inf)
 uniform_p: if True the uniform prior is used, if False the sparse prior is used (uniform_p= False by default)
 ```
+
+### Other samplers (less performing)
+To run the SEO (Stochastic Even Odd scheme) structure MCMC use the function:
+```
+SEO_sampler=deo_structure_mcmc(...) 
+```
+
+To run a structure MCMC where, in the cummunication phase, only 1 random swap among chains is allowed:
+```
+single_swap_pt_sampler=rand_structure_mcmc(...) 
+```
+
+To run a simple structure MCMC without parallel tempering use the function:
+```
+no_pt_sampler=structure_mcmc(...) 
+```
+
