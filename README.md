@@ -4,8 +4,8 @@
  ### Types of moves
 The structure MCMC can use 3 different types of moves:
 * [MC3](https://link.springer.com/article/10.1023/A:1020202028934) move (adding, removing, reversing an edge)
-* [REV move](https://link.springer.com/article/10.1007/s10994-008-5057-7) (New Edge Reversal)
-* [MBR move](https://www.researchgate.net/publication/309072789_Improving_structure_MCMC_for_Bayesian_networks_through_Markov_Blanket_resampling)  (Markov Blanket Resampling)
+* [REV](https://link.springer.com/article/10.1007/s10994-008-5057-7) move (New Edge Reversal)
+* [MBR](https://www.researchgate.net/publication/309072789_Improving_structure_MCMC_for_Bayesian_networks_through_Markov_Blanket_resampling) move (Markov Blanket Resampling)
 
 ### Different samplers
 There are 4 different samplers in the notebook (3 involving different parallel tempering schemes and 1 simple structure MCMC without parallel tempering). The most efficient sampler is the DEO structure MCMC.  
