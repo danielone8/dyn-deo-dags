@@ -1,5 +1,5 @@
-# DEO Structure MCMC for sampling DAGs
- This repository contains a Jupyter notebook where functions for sampling DAGs (using a costumizable structure MCMC) are implemented. The sampler can use different types of parallel tempering schemes.
+# Dynamic DEO Structure MCMC for sampling DAGs
+ This repository contains a Jupyter notebook where functions for sampling DAGs (using a costumizable structure MCMC) are implemented. The sampler can use different types of parallel tempering schemes, with fixed temperatures, tuned temperatures that become fixed after a defined number of tuning iterations or temperatures that are constantly tuned (dynamic tuning).
 
  ### Types of moves
 The structure MCMC can use 3 different types of moves:
